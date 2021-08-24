@@ -1,0 +1,160 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <title>Hello, world!</title>
+    <style>
+         .w-50-px {
+             width: 50px;
+         }
+
+         .slider-for img.item {
+             width: 100%;
+             height: 500px;
+             object-fit: cover;
+         }
+
+        .slider-nav img.item {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .w-10-px {
+            width: 30px;
+            height: 30px;
+        }
+
+        img.prev-arrow { 
+            z-index: 1;
+            top: 45%;
+            left: 10px;
+        }
+
+        img.next-arrow { 
+            z-index: 1;
+            top: 45%;
+            right: 10px;
+        }
+
+        .top-nav {
+            padding-top: 17px;
+        }
+
+        .slogan, .logo, .category {
+            font-size: 27px;
+        }
+        .rotate-text {
+            font-size: 170px;
+            writing-mode: vertical-rl;
+            margin-left: 0;
+            left: -23%;
+            color: gray;
+            opacity: 0.2;
+        }
+    </style>
+  </head>
+  <body>
+      
+    <nav class="top-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <p class="logo">LeonStyle</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="slogan">
+                        レオンスタイル
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-end">
+                        <ul class="list-inline social-share">
+                            <li class="list-inline-item">
+                                <a href=""><img class="w-50-px" src="images/line_media_social_icon.png" alt=""></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><img class="w-50-px" src="images/media_facebook_facebookicon.png" alt=""></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href=""><img class="w-50-px" src="images/twitter_logo_icon.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 position-relative">
+                    <p class="category">内部</p>
+                    <div class="rotate-text position-absolute">Interior</div>
+                </div>
+                <div class="col-md-10">
+                    <div class="slider">
+                        <div class="slider-for mb-4">
+                            <img class="item" src="images/slider/photo-1522771739844-6a9f6d5f14af.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1513694203232-719a280e022f.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1560448205-4d9b3e6bb6db.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1552242718-c5360894aecd.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1484154218962-a197022b5858.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1572891086295-6c1c7c476549.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1596900779744-2bdc4a90509a.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1585412727339-54e4bae3bbf9.jpeg" alt="">
+                        </div>
+                        <div class="slider-nav">
+                            <img class="item" src="images/slider/photo-1522771739844-6a9f6d5f14af.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1513694203232-719a280e022f.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1560448205-4d9b3e6bb6db.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1552242718-c5360894aecd.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1484154218962-a197022b5858.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1572891086295-6c1c7c476549.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1596900779744-2bdc4a90509a.jpeg" alt="">
+                            <img class="item" src="images/slider/photo-1585412727339-54e4bae3bbf9.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                fade: true,
+                autoplay: true,
+                asNavFor: '.slider-nav',
+                prevArrow : '<img class="w-10-px position-absolute prev-arrow rounded-circle bg-light" src="images/arrow/direction_left_icon.png">',
+                nextArrow : '<img class="w-10-px position-absolute next-arrow rounded-circle bg-light" src="images/arrow/direction_next_icon.png">'
+            });
+
+            $('.slider-nav').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: '.slider-for',
+                dots: false,
+                autoplay: true,
+                centerMode: true,
+                focusOnSelect: true,
+                prevArrow : '<img class="w-10-px position-absolute prev-arrow" src="images/arrow/left_icon.png">',
+                nextArrow : '<img class="w-10-px position-absolute next-arrow" src="images/arrow/latter_icon.png">'
+            });
+
+        });
+    </script>
+  </body>
+</html>

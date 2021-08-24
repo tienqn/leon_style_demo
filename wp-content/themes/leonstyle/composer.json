@@ -1,0 +1,17 @@
+{
+    "name": "tienpd/leonstyle",
+    "description": "wordpress OOP",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Leonstyle\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tienpham",
+            "email": "tiens8acc@gmail.com"
+        }
+    ],
+    "require": {}
+}
